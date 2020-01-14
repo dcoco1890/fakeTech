@@ -26,3 +26,29 @@ header h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
 }
+main#main-doc {
+  position: relative;
+  top: 0;
+  left: 380px;
+  width: calc(100vw - 380px);
+  padding-top: 30px;
+}
+section {
+  padding: 0 15px 10px 15px;
+}
+section article {
+  margin: 15px;
+}
+section.main-section > header {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    width: 280px;
+  }
+  main#main-doc {
+    width: calc(100vw - 280px);
+    left: 280px;
+  }
+}
