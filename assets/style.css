@@ -1,0 +1,28 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 290px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ul.list-group {
+  width: 100%;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
