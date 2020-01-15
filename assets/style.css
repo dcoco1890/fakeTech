@@ -10,6 +10,7 @@
   align-items: center;
   border-right: 2px solid rgba(0, 0, 0, 0.5);
   height: 100vh;
+  background-color: #eee;
 }
 
 #navbar ul {
@@ -21,6 +22,18 @@
 ul.list-group {
   width: 100%;
 }
+li.list-group-item,
+a {
+  background-color: #eee;
+}
+li.list-group-item:hover {
+  animation-name: hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  /* transition: linear;
+  transition-duration: 0.5s;
+  transform: scale(1.03) translate(-2px, 0); */
+}
 header h1 {
   margin: 0;
   font-size: 1.8rem;
@@ -30,8 +43,11 @@ main#main-doc {
   position: relative;
   top: 0;
   left: 380px;
+  /* might be unnecessary */
   width: calc(100vw - 380px);
   padding-top: 30px;
+  margin: 0 2rem;
+  max-width: 1000px;
 }
 section {
   padding: 0 15px 10px 15px;
@@ -43,6 +59,14 @@ section.main-section > header {
   font-size: 1.8rem;
 }
 
+code {
+  display: block;
+  white-space: pre;
+  padding: 15px;
+  margin: 10px 10px 0 10px;
+  text-align: left;
+  line-height: 2;
+}
 @media (max-width: 800px) {
   #navbar {
     width: 280px;
@@ -50,5 +74,11 @@ section.main-section > header {
   main#main-doc {
     width: calc(100vw - 280px);
     left: 280px;
+  }
+}
+
+@keyframes hover {
+  100% {
+    transform: scale(1.02) translate(-2px, 0);
   }
 }

@@ -1,121 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Technical Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Sans+JP&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/edb4924e5f.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Sans+JP&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/edb4924e5f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <nav id="navbar">
-      <header><h1>Some Documentation</h1></header>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <a class="nav-link" href="#intro">Introduction</a>
-        </li>
-        <li class="list-group-item">
-          <a class="nav-link" href="#what-you-know">What you should know</a>
-        </li>
-        <li class="list-group-item">
-          <a class="nav-link" href="#push">Array.prototype.push()</a>
-        </li>
-        <li class="list-group-item">
-          <a class="nav-link" href="#intro">Introduction</a>
-        </li>
-        <li class="list-group-item">
-          <a class="nav-link" href="#intro">Introduction</a>
-        </li>
-        <li class="list-group-item">
-          <a class="nav-link" href="#intro">Introduction</a>
-        </li>
-        <li class="list-group-item">
-          <a class="nav-link" href="#intro">Introduction</a>
-        </li>
-      </ul>
+        <header>
+            <h1>Some Documentation</h1>
+        </header>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a class="nav-link" href="#intro">Introduction</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="#what-you-know">What you should know</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="#push">Array.prototype.push()</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="#unshift">Array.prototype.unshift()</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="#intro">Introduction</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="#intro">Introduction</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="#intro">Introduction</a>
+            </li>
+        </ul>
     </nav>
 
     <main id="main-doc">
-      <!-- Intro section -->
-      <section class="main-section" id="intro">
-        <header>Introduction</header>
-        <article>
-          <p>
-            Welcome to my fake documentation page. Here, I am going to be going
-            over different ways you can manipulate arrays with javascript. I
-            don't know why I chose to do this, but here we are. Javascript is a
-            fun language to learn as the learning curve is not quite as steep as
-            it is with other languages (looking at you, C). Never the less, all
-            programming is working with data. Manipulating it, storing it,
-            moving it, or what have you. If you want to be good, it's good to
-            learn all the ways you can play with data.
-          </p>
-          <p>
-            JavaScript contains a standard library of objects, such as Array,
-            Date, and Math, and a core set of language elements such as
-            operators, control structures, and statements. Core JavaScript can
-            be extended for a variety of purposes by supplementing it with
-            additional objects; for example:
-          </p>
-          <ul>
-                <li>
-                  Client-side JavaScript extends the core language by supplying objects
-                  to control a browser and its Document Object Model (DOM). For example,
-                  client-side extensions allow an application to place elements on an
-                  HTML form and respond to user events such as mouse clicks, form input,
-                  and page navigation.
-                </li>
-                <li>
-                  Server-side JavaScript extends the core language by supplying objects
-                  relevant to running JavaScript on a server. For example, server-side
-                  extensions allow an application to communicate with a database,
-                  provide continuity of information from one invocation to another of
-                  the application, or perform file manipulations on a server.
-                </li>
-        </article>
-      </section>
-
-      <!-- what you should know section -->
-      <section class="main-section" id="what-you-know">
-        <header>What you should know</header> <article>
-                <p>This guide assumes you have the following basic background:</p>
-          
+        <!-- Intro section -->
+        <section class="main-section" id="intro">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Welcome to my fake documentation page. Here, I am going to be going
+                    over different ways you can manipulate arrays with javascript. I
+                    don't know why I chose to do this, but here we are. Javascript is a
+                    fun language to learn as the learning curve is not quite as steep as
+                    it is with other languages (looking at you, C). Never the less, all
+                    programming is working with data. Manipulating it, storing it,
+                    moving it, or what have you. If you want to be good, it's good to
+                    learn all the ways you can play with data.
+                </p>
+                <p>
+                    JavaScript contains a standard library of objects, such as Array,
+                    Date, and Math, and a core set of language elements such as
+                    operators, control structures, and statements. Core JavaScript can
+                    be extended for a variety of purposes by supplementing it with
+                    additional objects; for example:
+                </p>
                 <ul>
-                  <li>
-                    A general understanding of the Internet and the World Wide Web (WWW).
-                  </li>
-                  <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                  <li>
-                    Some programming experience. If you are new to programming, try one of
-                    the tutorials linked on the main page about JavaScript.
-                  </li>
+                    <li>
+                        Client-side JavaScript extends the core language by supplying objects
+                        to control a browser and its Document Object Model (DOM). For example,
+                        client-side extensions allow an application to place elements on an
+                        HTML form and respond to user events such as mouse clicks, form input,
+                        and page navigation.
+                    </li>
+                    <li>
+                        Server-side JavaScript extends the core language by supplying objects
+                        relevant to running JavaScript on a server. For example, server-side
+                        extensions allow an application to communicate with a database,
+                        provide continuity of information from one invocation to another of
+                        the application, or perform file manipulations on a server.
+                    </li>
+            </article>
+        </section>
+
+        <!-- what you should know section -->
+        <section class="main-section" id="what-you-know">
+            <header>What you should know</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of
+                        the tutorials linked on the main page about JavaScript.
+                    </li>
                 </ul>
-              </article>
-      </section>
-      <section class="main-section" id="push">
-          <header>Array.prototype.push()</header>
-          <article>
-              <p>The push() method adds one or more elements to the end of an array and returns the new length of the array.</p>
-          </article>
-      </section>
-      <section class="main-section"></section>
-      <section class="main-section"></section>
-      <section class="main-section"></section>
+            </article>
+        </section>
+
+        <!-- push section -->
+        <section class="main-section" id="push">
+            <header>Array.prototype.push()</header>
+            <article>
+                <p>The push() method adds one or more elements to the end of an array and returns the new length of the
+                    array. As arrays in JavaScript are mutable object, we can easily add or remove elements from the
+                    Array. And it dynamically changes as we modify the elements from the array.</p>
+                <p>Example:</p>
+                <code>var strArray = ["a", "b", "c"];
+strArray.push("d");
+console.log(strArray);
+// output 
+strArray = ["a", "b", "c", "d"]
+              </code>
+            </article>
+        </section>
+
+        <!-- unshift section -->
+        <section class="main-section" id="unshift">
+            <header>Array.prototype.unshift()</header>
+                <article>
+                    <p>The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.</p>
+                    <code>const array1 = [1, 2, 3];
+console.log(array1.unshift(4, 5));
+// expected output: 5
+console.log(array1);
+// expected output: Array [4, 5, 1, 2, 3]
+                    </code>
+                </article>
+        </section>
+        <section class="main-section"></section>
+        <section class="main-section"></section>
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+</body>
+
 </html>
