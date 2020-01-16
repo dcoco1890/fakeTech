@@ -15,36 +15,36 @@
 <body>
     <nav id="navbar">
         <header>
-            <h1>Some Documentation</h1>
+            <h1>Array Fun</h1>
         </header>
         <ul class="list-group">
             <li class="list-group-item">
-                <a class="nav-link" href="#intro">Introduction</a>
+                <a class="nav-link" href="#introduction">Introduction</a>
             </li>
             <li class="list-group-item">
-                <a class="nav-link" href="#what-you-know">What you should know</a>
+                <a class="nav-link" href="#what_you_should_know">What you should know</a>
             </li>
             <li class="list-group-item">
-                <a class="nav-link" href="#push">Array.prototype.push()</a>
+                <a class="nav-link" href="#array.prototype.push()">Array.prototype.push()</a>
             </li>
             <li class="list-group-item">
-                <a class="nav-link" href="#unshift">Array.prototype.unshift()</a>
+                <a class="nav-link" href="#array.prototype.unshift()">Array.prototype.unshift()</a>
             </li>
             <li class="list-group-item">
-                <a class="nav-link" href="#intro">Introduction</a>
+                <a class="nav-link" href="#array.prototype.pop()">Array.prototype.pop()</a>
             </li>
             <li class="list-group-item">
-                <a class="nav-link" href="#intro">Introduction</a>
+                <a class="nav-link" href="#array.prototype.shift()">Array.prototype.shift()</a>
             </li>
             <li class="list-group-item">
-                <a class="nav-link" href="#intro">Introduction</a>
+                <a class="nav-link" href="#array.prototype.splice()">Array.prototype.splice()</a>
             </li>
         </ul>
     </nav>
 
     <main id="main-doc">
         <!-- Intro section -->
-        <section class="main-section" id="intro">
+        <section class="main-section" id="introduction">
             <header>Introduction</header>
             <article>
                 <p>
@@ -83,7 +83,7 @@
         </section>
 
         <!-- what you should know section -->
-        <section class="main-section" id="what-you-know">
+        <section class="main-section" id="what_you_should_know">
             <header>What you should know</header>
             <article>
                 <p>This guide assumes you have the following basic background:</p>
@@ -102,13 +102,13 @@
         </section>
 
         <!-- push section -->
-        <section class="main-section" id="push">
+        <section class="main-section" id="array.prototype.push()">
             <header>Array.prototype.push()</header>
             <article>
                 <p>The push() method adds one or more elements to the end of an array and returns the new length of the
                     array. As arrays in JavaScript are mutable object, we can easily add or remove elements from the
                     Array. And it dynamically changes as we modify the elements from the array.</p>
-                <p>Example:</p>
+
                 <code>var strArray = ["a", "b", "c"];
 strArray.push("d");
 console.log(strArray);
@@ -119,20 +119,76 @@ strArray = ["a", "b", "c", "d"]
         </section>
 
         <!-- unshift section -->
-        <section class="main-section" id="unshift">
+        <section class="main-section" id="array.prototype.unshift()">
             <header>Array.prototype.unshift()</header>
-                <article>
-                    <p>The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.</p>
-                    <code>const array1 = [1, 2, 3];
+            <article>
+                <p>The unshift() method adds one or more elements to the beginning of an array and returns the new
+                    length of the array.</p>
+                <code>const array1 = [1, 2, 3];
 console.log(array1.unshift(4, 5));
 // expected output: 5
 console.log(array1);
 // expected output: Array [4, 5, 1, 2, 3]
                     </code>
+            </article>
+        </section>
+
+        <!-- array pop -->
+        <section class="main-section" id="array.prototype.pop()">
+            <header>Array.prototype.pop()</header>
+            <article>
+                <p>The pop() method removes the last element from an array and returns that element. This method changes
+                    the length of the array. If you call pop() on an empty array, it returns undefined.</p>
+                    <p>If you call pop() on an empty array, it returns undefined.</p>
+                <code>const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+console.log(plants.pop());
+// expected output: "tomato"
+
+console.log(plants);
+// expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+                            
+plants.pop();
+                            
+console.log(plants);
+// expected output: Array ["broccoli", "cauliflower", "cabbage"]
+
+                    </code>
+            </article>
+        </section>
+
+        <!-- array shift -->
+        <section class="main-section" id="array.prototype.shift()">
+            <header>Array.prototype.shift()</header>
+            <article>
+                <p>The shift() method removes the first element from an array and returns that removed element. This
+                    method changes the length of the array.</p>
+                    <p>The shift method removes the element at the zeroeth index and shifts the values at consecutive indexes down, then returns the removed value. If the length property is 0, undefined is returned.</p>
+                <code>const array1 = [1, 2, 3];
+const firstElement = array1.shift();                            
+console.log(array1);
+// expected output: Array [2, 3]
+
+console.log(firstElement);
+// expected output: 1</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="array.prototype.splice()">
+            <header>Array.prototype.splice()</header>
+                <article>
+                    <p>The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
+                    <code>const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at index 1
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+                            
+months.splice(4, 1, 'May');
+// replaces 1 element at index 4
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]</code>
                 </article>
         </section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
   height: 100vh;
   background-color: #eee;
 }
@@ -21,6 +21,10 @@
 }
 ul.list-group {
   width: 100%;
+}
+li.list-group-item {
+  width: 500px;
+  overflow: hidden;
 }
 li.list-group-item,
 a {
